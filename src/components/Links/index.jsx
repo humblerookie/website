@@ -9,9 +9,8 @@ class Links extends React.Component {
       telegram: author.telegram,
       twitter: author.twitter,
       github: author.github,
-      vk: author.vk,
-      rss: author.rss,
-      email: author.email,
+      linkedIn: author.linkedIn,
+      stackoverflow: author.stackoverflow,
     }
 
     return (
@@ -26,6 +25,7 @@ class Links extends React.Component {
               <i className="icon-twitter" />
             </a>
           </li>
+
           <li className="links__list-item">
             <a
               href={`https://www.github.com/${links.github}`}
@@ -35,33 +35,20 @@ class Links extends React.Component {
               <i className="icon-github" />
             </a>
           </li>
-          <li className="links__list-item">
-            <a
-              href={`https://www.vk.com/${links.vk}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="icon-vkontakte" />
-            </a>
+         <li className="links__list-item">
+              <a href={`https://t.me/${links.telegram}`}>
+                <i className="icon-paper-plane" />
+              </a>
           </li>
-        </ul>
-        <ul className="links__list">
-          <li className="links__list-item">
-            <a href={`mailto:${links.email}`}>
-              <i className="icon-mail" />
-            </a>
+           <li className="links__list-item">
+              <a href={`https://www.linkedin.com/in/${links.linkedIn}`}>
+                <i className="icon-linkedin" />
+              </a>
           </li>
-          <li className="links__list-item">
-            <a href={`telegram:${links.telegram}`}>
-              <i className="icon-paper-plane" />
-            </a>
-          </li>
-        </ul>
-        <ul className="links__list">
-          <li className="links__list-item">
-            <a href={links.rss}>
-              <i className="icon-rss" />
-            </a>
+           <li className="links__list-item">
+              <a href={`https://stackoverflow.com/users/${links.stackoverflow}`}>
+                <i className="icon-stackoverflow" />
+              </a>
           </li>
         </ul>
       </div>

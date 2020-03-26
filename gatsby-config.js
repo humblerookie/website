@@ -7,33 +7,32 @@ module.exports = {
   siteMetadata: {
     url,
     siteUrl: url,
-    title: 'Blog by John Doe',
+    title: 'Anvith Bhat | My Blog',
     subtitle:
-      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+      "I'm passionate about creating stuff around android. Be vary, observations are interlaced with humor.",
     copyright: '© All rights reserved.',
-    disqusShortname: '',
+    disqusShortname: 'anv1th',
     menu: [
       {
         label: 'Articles',
         path: '/',
       },
       {
-        label: 'About me',
+        label: 'About',
         path: '/about/',
       },
-      {
-        label: 'Contact me',
-        path: '/contact/',
+       {
+        label: 'Projects',
+        path: '/projects/',
       },
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vk: '#',
+      name: 'Anvith Bhat',
+      linkedIn: 'anv1th',
+      telegram: 'anv1th',
+      twitter: 'anv1th',
+      github: 'humblerookie',
+      stackoverflow: '2185582',
     },
   },
   plugins: [
@@ -104,6 +103,18 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+        { resolve: "gatsby-remark-embed-gist",
+            options: {
+              // Optional:
+
+              // the github handler whose gists are to be accessed
+              username: 'humblerookie',
+
+              // a flag indicating whether the github default gist css should be included or not
+              // default: true
+              includeDefaultCss: true
+            }
+          },
           {
             resolve: 'gatsby-remark-images',
             options: {
@@ -171,6 +182,6 @@ module.exports = {
         ],
         precision: 8,
       },
-    },
+    }
   ],
 }

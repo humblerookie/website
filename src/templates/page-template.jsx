@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
+import favicon from '../pages/favicon.ico'
 import Layout from '../components/Layout'
 import PageTemplateDetails from '../components/PageTemplateDetails'
 
@@ -15,6 +16,7 @@ class PageTemplate extends React.Component {
       <Layout>
         <div>
           <Helmet>
+            <link rel="icon" href={favicon} />
             <title>{`${pageTitle} - ${title}`}</title>
             <meta name="description" content={description} />
           </Helmet>
@@ -40,12 +42,11 @@ export const pageQuery = graphql`
         }
         author {
           name
-          email
+          linkedIn
           telegram
           twitter
           github
-          rss
-          vk
+          stackoverflow
         }
       }
     }

@@ -1,13 +1,27 @@
 ---
-title: "About me"
+title: "About"
 layout: page
 path: "/about"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+Hi There 🖖.
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](./1.jpg)
+I'm Anvith, I create and design stuff around android. I enjoy building with disparate 
+platforms be it Kotlin, JS, Flutter or others. I love running the extra mile when it comes
+to UI/UX. Architecture mood swings between _<span class="quote">&nbsp;If it fits.. it sits&nbsp;</span>_ to _<span class="quote">&nbsp;Why so coupled!&nbsp;</span>_.
+I've also built a few projects notable of which was [CryptoNiffler - India's first crypto arbitrage app](https://play.google.com/store/apps/details?id=com.bariski.cryptoniffler).
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+I work as a Lead Mobile Engineer at [Fueled](https://fueled.com) and in the past have have worked 
+with a bunch of startups around mobile and web, including an unsually long stint at a 
+corporate MNC. I dish out code during the day and electronic bullets by the night. I love
+nature documentaries.
+
+House MD is my favorite show. 
+
+
+_<blockquote>'George Carlin made me smile, Jimmy Carr makes me laugh.'</blockquote>_
+
+
+
+![Droidjam 2019 Talk](./conf.jpg)
