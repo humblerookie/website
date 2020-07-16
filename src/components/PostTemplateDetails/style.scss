@@ -44,10 +44,34 @@
             margin-right: 15px;
             @include margin-bottom(1);
         }
+        & img {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
         & :not(div) {
             max-width: $layout-post-single-width;
             margin-left: auto;
             margin-right: auto;
+        }
+        & .gist {
+            max-width: $layout-post-single-width;
+            margin-left: auto;
+            margin-right: auto;
+        } 
+        & .gist .gist-file {
+            border: none; 
+        }
+        & .gist .gist-meta {
+            display: none; 
+        }
+        & .gist .gist-data {
+            border-bottom: none;
+            background: $color-surface; 
+            padding: 15px;
+        }
+        & .gist .blob-num{
+           color: $color-onsurface;
         }
     }
     &__footer {

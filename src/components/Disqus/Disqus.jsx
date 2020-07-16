@@ -25,7 +25,9 @@ class Disqus extends Component {
     }
     const post = postNode.frontmatter
     const url = siteMetadata.url + postNode.fields.slug
-    return (
+    return ""
+
+    /*(
       <ReactDisqusComments
         shortname={siteMetadata.disqusShortname}
         identifier={post.title}
@@ -34,7 +36,7 @@ class Disqus extends Component {
         category_id={post.category_id}
         onNewComment={this.notifyAboutComment}
       />
-    )
+    )*/
   }
 }
 
