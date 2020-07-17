@@ -118,7 +118,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 960,
+              maxWidth: 960
             },
           },
           {
@@ -141,6 +141,14 @@ module.exports = {
       resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: ['roboto:400,400i,500,700'],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `SiteDefault`,
+        short_name: `default`,
+        icon: "src/assets/images/favicon.png"
       },
     },
     'gatsby-plugin-sitemap',
