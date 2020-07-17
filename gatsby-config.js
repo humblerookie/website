@@ -144,10 +144,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `SiteDefault`,
-        short_name: `default`,
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: '/',
         icon: "src/assets/images/favicon.png"
       },
     },
