@@ -20,7 +20,9 @@ fun executeGitCommit(message: String) {
         .exec(
             arrayOf(
                 "/bin/sh", "-c",
-                "cd $destPath;" +
+                "cd $srcCodePath;" +
+                        "gatsby build;" +
+                        "cd $destPath;" +
                         " git add .;" +
                         "git commit -m \"$message\";" +
                         "git push origin master;" +

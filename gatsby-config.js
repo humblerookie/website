@@ -11,7 +11,7 @@ module.exports = {
     subtitle:
       "I'm passionate about creating stuff around android. Be vary, observations may be interlaced with humor.",
     copyright: '© All rights reserved.',
-    disqusShortname: 'https-anvith-dev',
+    disqusShortname: 'anvith',
     menu: [
       {
         label: 'Articles',
@@ -155,7 +155,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-disqus',
       options: {
-        shortname: 'https-anvith-dev'
+        shortname: 'anvith'
       }
     },
     'gatsby-plugin-sitemap',
