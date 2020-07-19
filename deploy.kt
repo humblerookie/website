@@ -5,6 +5,7 @@ const val rootPath = "/Users/Anvith/Development/"
 const val destPath = "${rootPath}humblerookie.github.io"
 const val srcPath = "${rootPath}website/public"
 const val srcCodePath = "${rootPath}website/"
+
 fun copyFiles() {
     val target = File(destPath)
     File(srcPath).listFiles().forEach {
@@ -22,14 +23,14 @@ fun executeGitCommit(message: String) {
                 "/bin/sh", "-c",
                 "cd $srcCodePath;" +
                         "gatsby build;" +
-                        "cd $destPath;" +
                         " git add .;" +
                         "git commit -m \"$message\";" +
                         "git push origin master;" +
-                        "cd $srcCodePath;" +
-                        " git add .;" +
+                        "cd $destPath;" +
+                        "git add .;" +
                         "git commit -m \"$message\";" +
                         "git push origin master;"
+
             )
         )
 }

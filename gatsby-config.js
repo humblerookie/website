@@ -29,7 +29,6 @@ module.exports = {
     author: {
       name: 'Anvith Bhat',
       linkedIn: 'anv1th',
-      telegram: 'anv1th',
       twitter: 'anv1th',
       github: 'humblerookie',
       stackoverflow: '2185582',
