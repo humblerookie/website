@@ -73,6 +73,11 @@
         & .gist .blob-num{
            color: $color-onsurface;
         }
+         & .gist .blob-num{
+           color: $color-onsurface;
+           display: none;
+        }
+
     }
     &__footer {
         max-width: $layout-post-single-width;

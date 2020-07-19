@@ -6,10 +6,9 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-    color: black;
+    color: #ffc045;
     background: none;
-    text-shadow: 0 1px white;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
@@ -55,12 +54,12 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-    background: #f5f2f0;
+    background: #323232;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-    padding: .1em;
+    padding: 2px 6px;
     border-radius: .3em;
     white-space: normal;
 }

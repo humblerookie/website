@@ -1,1 +1,1 @@
-java -jar deploy.jar
+java -jar deploy.jar $1
