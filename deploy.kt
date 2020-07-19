@@ -16,23 +16,44 @@ fun copyFiles() {
     }
 }
 
-fun executeGitCommit(message: String) {
+fun executeGitCommitForSource(message: String) {
     Runtime.getRuntime()
         .exec(
             arrayOf(
                 "/bin/sh", "-c",
-                "cd $srcCodePath;" +
-                        "gatsby build;" +
-                        " git add .;" +
-                        "git commit -m \"$message\";" +
-                        "git push origin master;" +
-                        "cd $destPath;" +
-                        "git add .;" +
-                        "git commit -m \"$message\";" +
-                        "git push origin master;"
+                "cd $srcCodePath &&" +
+                        " git add . &&" +
+                        " git commit -m \"$message\" &&" +
+                        " git push origin master ;"
 
             )
-        )
+        ).waitFor()
+}
+
+fun executeGitCommitForWebsite(message: String) {
+    Runtime.getRuntime()
+        .exec(
+            arrayOf(
+                "/bin/sh", "-c",
+                " cd $destPath &&" +
+                        " git add . &&" +
+                        " git commit -m \"$message\" &&" +
+                        " git push origin master;"
+
+            )
+        ).waitFor()
+}
+
+fun buildStaticFiles() {
+    Runtime.getRuntime()
+        .exec(
+            arrayOf(
+                "/bin/sh", "-c",
+                "cd $srcCodePath &&" +
+                        " gatsby build;"
+
+            )
+        ).waitFor()
 }
 
 fun main(args: Array<String>) {
@@ -40,6 +61,8 @@ fun main(args: Array<String>) {
         throw IllegalArgumentException("You've not passed the git commit message")
     }
     val message = args.joinToString(" ")
+    buildStaticFiles()
     copyFiles()
-    executeGitCommit(message)
+    executeGitCommitForSource(message)
+    executeGitCommitForWebsite(message)
 }
