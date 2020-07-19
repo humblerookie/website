@@ -81,17 +81,18 @@ img {
 }
 
 hr {
-    margin-top: 52px;
-    margin-bottom: 52px;
+    margin-top: 2.6em;
+    margin-bottom: 2.6em;
     border: 0;
     color: $color-base;
     display: block;
-    height: 26px;
+    height: 14px;
     margin-right: auto;
+    width:20%;
     margin-left: auto;
     background-size: 100% 26px;
     background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, $color-base 11px, $color-base 15px, transparent 15px, transparent 26px);
-    width: 100px;
+
 }
 
 a {
@@ -246,20 +247,6 @@ figcaption {
   }
 } 
 
-
-body .gist {
-    max-width: 40em;
-    margin-left: auto;
-    margin-right: auto;
-} 
-
-body .gist .gist-meta {
-   background: #DDD !important; 
-}
-body .gist .gist-data {
-   background: #323232; 
-    padding: 16px;
-}
 
 @import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/idle-fingers.css');
 

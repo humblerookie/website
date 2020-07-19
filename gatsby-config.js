@@ -9,9 +9,9 @@ module.exports = {
     siteUrl: url,
     title: 'Anvith Bhat | My Blog',
     subtitle:
-      "I'm passionate about creating stuff around android. Be vary, observations are interlaced with humor.",
+      "I'm passionate about creating stuff around android. Be vary, observations may be interlaced with humor.",
     copyright: '© All rights reserved.',
-    disqusShortname: 'anv1th',
+    disqusShortname: 'https-anvith-dev',
     menu: [
       {
         label: 'Articles',
@@ -151,6 +151,12 @@ module.exports = {
         start_url: '/',
         icon: "src/assets/images/favicon.png"
       },
+    },
+    {
+      resolve: 'gatsby-plugin-disqus',
+      options: {
+        shortname: 'https-anvith-dev'
+      }
     },
     'gatsby-plugin-sitemap',
     'gatsby-plugin-offline',
